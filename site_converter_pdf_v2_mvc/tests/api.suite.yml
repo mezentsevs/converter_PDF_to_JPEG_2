@@ -1,0 +1,6 @@
+actor: ApiTester
+modules:
+    enabled:
+        - REST:
+            depends: PhpBrowser
+            url: http://localhost/my-site/site_converter_pdf_v2_mvc/public/api/

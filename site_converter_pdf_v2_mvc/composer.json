@@ -1,0 +1,40 @@
+{
+    "name": "user/test_wowworks",
+    "description": "test wowworks",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+    },
+    "autoload": {
+        "psr-0": {
+            "core\\": "core/",
+            "models\\": "models/",
+            "controllers\\": "controllers/",
+            "tests\\phpunit\\": "tests/phpunit/",
+            "tests\\phpunit\\controllers\\": "tests/phpunit/controllers/",
+            "tests\\phpunit\\core\\": "tests/phpunit/core/",
+            "tests\\phpunit\\models\\": "tests/phpunit/models/",
+            "tests\\api\\": "tests/api/"
+        },
+        "classmap": [
+            "core",
+            "models",
+            "controllers",
+            "tests/phpunit",
+            "tests/phpunit/controllers",
+            "tests/phpunit/core",
+            "tests/phpunit/models",
+            "tests/api"
+        ],
+        "files": [
+            "config/config.php",
+            "config/initialize.php",
+            "includes/functions.php"
+        ]
+    },
+    "require-dev": {
+    	"phpunit/phpunit" : "^5",
+        "codeception/codeception": "^2.3",
+        "squizlabs/php_codesniffer": "*"
+    }
+}
